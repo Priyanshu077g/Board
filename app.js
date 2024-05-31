@@ -18,7 +18,7 @@ let server = app.listen(port, () => {
 });
 
 // Add CORS middleware for Socket.IO
-const io = socket(server, { cors: { origin: "http://127.0.0.1:5501" } });
+const io = socket(server, { cors: { origin: "https://writing-board.netlify.app" } });
 
 io.on("connection", (socket) => {
     console.log("Socket connection 👍");
